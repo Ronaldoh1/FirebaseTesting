@@ -13,6 +13,12 @@
 		F217C4C41B956B0100A30FD1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F217C4C31B956B0100A30FD1 /* Images.xcassets */; };
 		F217C4C71B956B0100A30FD1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F217C4C51B956B0100A30FD1 /* LaunchScreen.xib */; };
 		F217C4D31B956B0100A30FD1 /* FirebaseTestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F217C4D21B956B0100A30FD1 /* FirebaseTestingTests.swift */; };
+		F217C4DD1B956B6700A30FD1 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F217C4DC1B956B6700A30FD1 /* Firebase.framework */; };
+		F217C4DF1B956BC800A30FD1 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F217C4DE1B956BC800A30FD1 /* libc++.dylib */; };
+		F217C4E11B956BE800A30FD1 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F217C4E01B956BE800A30FD1 /* libicucore.dylib */; };
+		F217C4E31B956BF400A30FD1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F217C4E21B956BF400A30FD1 /* SystemConfiguration.framework */; };
+		F217C4E51B956BFB00A30FD1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F217C4E41B956BFB00A30FD1 /* Security.framework */; };
+		F217C4E71B956C0700A30FD1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F217C4E61B956C0700A30FD1 /* CFNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,13 @@
 		F217C4CC1B956B0100A30FD1 /* FirebaseTestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirebaseTestingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F217C4D11B956B0100A30FD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F217C4D21B956B0100A30FD1 /* FirebaseTestingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseTestingTests.swift; sourceTree = "<group>"; };
+		F217C4DC1B956B6700A30FD1 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		F217C4DE1B956BC800A30FD1 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		F217C4E01B956BE800A30FD1 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		F217C4E21B956BF400A30FD1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F217C4E41B956BFB00A30FD1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F217C4E61B956C0700A30FD1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F217C4E81B956C3900A30FD1 /* FirebaseTesting-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FirebaseTesting-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +56,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F217C4E71B956C0700A30FD1 /* CFNetwork.framework in Frameworks */,
+				F217C4E51B956BFB00A30FD1 /* Security.framework in Frameworks */,
+				F217C4E31B956BF400A30FD1 /* SystemConfiguration.framework in Frameworks */,
+				F217C4E11B956BE800A30FD1 /* libicucore.dylib in Frameworks */,
+				F217C4DF1B956BC800A30FD1 /* libc++.dylib in Frameworks */,
+				F217C4DD1B956B6700A30FD1 /* Firebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +78,15 @@
 		F217C4AE1B956B0100A30FD1 = {
 			isa = PBXGroup;
 			children = (
+				F217C4E61B956C0700A30FD1 /* CFNetwork.framework */,
+				F217C4E41B956BFB00A30FD1 /* Security.framework */,
+				F217C4E21B956BF400A30FD1 /* SystemConfiguration.framework */,
+				F217C4E01B956BE800A30FD1 /* libicucore.dylib */,
+				F217C4DE1B956BC800A30FD1 /* libc++.dylib */,
 				F217C4B91B956B0100A30FD1 /* FirebaseTesting */,
 				F217C4CF1B956B0100A30FD1 /* FirebaseTestingTests */,
 				F217C4B81B956B0100A30FD1 /* Products */,
+				F217C4E81B956C3900A30FD1 /* FirebaseTesting-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +115,7 @@
 		F217C4BA1B956B0100A30FD1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F217C4DC1B956B6700A30FD1 /* Firebase.framework */,
 				F217C4BB1B956B0100A30FD1 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -340,9 +366,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FirebaseTesting",
+				);
 				INFOPLIST_FILE = FirebaseTesting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FirebaseTesting-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -350,9 +384,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FirebaseTesting",
+				);
 				INFOPLIST_FILE = FirebaseTesting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FirebaseTesting-Bridging-Header.h";
 			};
 			name = Release;
 		};
